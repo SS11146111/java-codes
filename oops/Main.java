@@ -86,10 +86,51 @@ public class Main {
 		 * shape.area(); circle.area(); rectangle.area(); triangle.area();
 		 */
 		 
-		MethodOverloading obj = new MethodOverloading();
-		obj.print();
-		obj.print("Sangita");
-		obj.print("Sangita","Saha");
+		/*
+		 * MethodOverloading obj = new MethodOverloading(); obj.print();
+		 * obj.print("Sangita"); obj.print("Sangita","Saha");
+		 */
+		
+		/*
+		 * Animal animal = new Animal(); animal.sound(); Animal dog = new Dog();
+		 * dog.sound(); Animal cat = new Cat(); cat.sound();
+		 */
+		
+		/*
+		 * AbstractEmployee emp1 = new Manager(); AbstractEmployee emp2 = new
+		 * Developer();
+		 * 
+		 * emp1.display(); emp2.display();
+		 */
+		
+		/*
+		 * AbstractShape circle = new CircleA(2); AbstractShape rectangle = new
+		 * RectangleA(2,4); AbstractShape triangle = new TriangleA(2,4);
+		 * circle.calculateArea(); rectangle.calculateArea(); triangle.calculateArea();
+		 */
+		
+		/*
+		 * StaticCounter obj1 = new StaticCounter(); StaticCounter.display();
+		 * StaticCounter obj2 = new StaticCounter(); StaticCounter.display();
+		 * StaticCounter obj3 = new StaticCounter(); StaticCounter.display();
+		 */
+		
+		/*
+		 * MathUtils.factorial(5); MathUtils.isPrime(6);
+		 */
+		
+		/*
+		 * MemberInnerClass obj = new MemberInnerClass(8); MemberInnerClass.InnerClass
+		 * iobj = obj.new InnerClass(); iobj.display();
+		 */
+		
+		/* StaticNestedClass.NestedClass.display(); */
+		
+		/*
+		 * LocalClass obj = new LocalClass(888); obj.localClassMethod();
+		 */
+		
+		
 		
 	}
 
