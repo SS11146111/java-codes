@@ -98,21 +98,14 @@ public class Main {
 		 * + e.getMessage()); }
 		 */
 		
-		BankingException obj = new BankingException();
-		
-		try
-		{
-			obj.withdraw(500);
-		}
-		catch(InsufficientBalanceException e)
-		{
-			System.err.println(e.getMessage());
-		}
-		finally {
-			
-			obj.deposit(1000);
-			obj.withdraw(400);
-		}
+		/*
+		 * BankingException obj = new BankingException();
+		 * 
+		 * try { obj.withdraw(500); } catch(InsufficientBalanceException e) {
+		 * System.err.println(e.getMessage()); } finally {
+		 * 
+		 * obj.deposit(1000); obj.withdraw(400); }
+		 */
 	
 		
 		
