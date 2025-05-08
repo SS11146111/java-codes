@@ -44,6 +44,27 @@ public class Main {
 		 * demo.ArrayListToLinkedList(); System.out.println();
 		 * demo.LinkedListToArrayList();
 		 */
+		
+		/*
+		 * FIFOLinkedList demo = new FIFOLinkedList(); demo.add(11); demo.add(12);
+		 * demo.add(13); demo.remove(); demo.remove();
+		 */
+		
+		/*
+		 * ListIteratorDemo demo = new ListIteratorDemo(); demo.displayForward();
+		 * demo.displayBackward();
+		 */
+		
+		ToDoList demo = new ToDoList();
+		demo.addTask("Change sheets", "Not done");
+		demo.addTask("Buy groceries", "Not done");
+		demo.addTask("Do laundry", "Not done");
+		demo.display();
+		demo.changeStatus(3, "Started");
+		demo.display();
+		demo.removeTask(2);
+		demo.display();
+		
 	}
 
 }
