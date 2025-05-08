@@ -3,7 +3,6 @@ import java.time.LocalDate;
 import java.util.*;
 public class Main {
 
-	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 		
 		/*
@@ -167,6 +166,76 @@ public class Main {
 		 * GroupAnagrams demo = new GroupAnagrams(); String[] words = {"bat", "tab",
 		 * "rat", "tar", "art", "cat"}; demo.groupAnagrams(words);
 		 */
-	}
+		
+		/*
+		 * TaskScheduler scheduler = new TaskScheduler();
+		 * scheduler.addTask("Email client", 2); scheduler.addTask("Backup database",
+		 * 1); scheduler.addTask("Clean temp files", 3); scheduler.runTasks();
+		 */
+		
+		/*
+		 * PrintQueue simulator = new PrintQueue();
+		 * 
+		 * simulator.addJob("Report.pdf"); simulator.addJob("Invoice.docx");
+		 * simulator.addJob("Presentation.pptx");
+		 * 
+		 * System.out.println("\n--- Start Printing ---\n"); simulator.processJobs();
+		 */
+		
+		/*
+		 * DequePalindrome demo = new DequePalindrome("mom"); demo.check();
+		 */
+		
+		/*
+		 * DequeStack demo = new DequeStack(); demo.add(2); demo.add(4); demo.add(7);
+		 * demo.add(3); demo.add(5);
+		 * 
+		 * demo.display();
+		 * 
+		 * demo.add(10);
+		 * 
+		 * demo.display();
+		 * 
+		 * demo.remove();
+		 * 
+		 * demo.display();
+		 * 
+		 * demo.remove(); demo.remove(); demo.remove(); demo.remove(); demo.remove();
+		 * 
+		 * demo.remove(); demo.display();
+		 */
+		
+		/*
+		 * BrowserHistory demo = new BrowserHistory("home.com");
+		 * demo.visit("www.google.com"); demo.visit("www.facebook.com");
+		 * demo.visit("www.discord.com"); demo.visit("www.github.com");
+		 * 
+		 * demo.forward(); demo.back(); demo.back(); demo.forward();
+		 */
+		
+		/*
+		 * PriorityQueue<Job> jobQueue = new PriorityQueue<>();
+		 * 
+		 * jobQueue.offer(new Job("Email Processing", 3)); jobQueue.offer(new
+		 * Job("Data Backup", 1)); jobQueue.offer(new Job("Report Generation", 2));
+		 * 
+		 * System.out.println("Processing jobs by priority:\n"); while
+		 * (!jobQueue.isEmpty()) { System.out.println(jobQueue.poll()); }
+		 */
+		
+		
+		/*
+		 * TicketCounter counter = new TicketCounter();
+		 * 
+		 * counter.cutTicket("Alice"); counter.cutTicket("Bob");
+		 * counter.cutTicket("Charlie");
+		 * 
+		 * counter.displayList();
+		 * 
+		 * System.out.println("Using tickets..."); counter.useTicket(); // Alice
+		 * counter.useTicket(); // Bob counter.useTicket(); // Charlie
+		 * counter.useTicket(); // All tickets used
+		 */	
+		}
 
 }
