@@ -98,8 +98,9 @@ public class Main {
 		 * CustomSorting demo = new CustomSorting(); demo.display();
 		 */
 		
-		SortTreeSetDesc demo = new SortTreeSetDesc();
-		demo.display();
+		/*
+		 * SortTreeSetDesc demo = new SortTreeSetDesc(); demo.display();
+		 */
 		
 	}
 
