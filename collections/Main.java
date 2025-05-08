@@ -55,14 +55,50 @@ public class Main {
 		 * demo.displayBackward();
 		 */
 		
-		ToDoList demo = new ToDoList();
-		demo.addTask("Change sheets", "Not done");
-		demo.addTask("Buy groceries", "Not done");
-		demo.addTask("Do laundry", "Not done");
-		demo.display();
-		demo.changeStatus(3, "Started");
-		demo.display();
-		demo.removeTask(2);
+		/*
+		 * ToDoList demo = new ToDoList(); demo.addTask("Change sheets", "Not done");
+		 * demo.addTask("Buy groceries", "Not done"); demo.addTask("Do laundry",
+		 * "Not done"); demo.display(); demo.changeStatus(3, "Started"); demo.display();
+		 * demo.removeTask(2); demo.display();
+		 */
+		
+		/*
+		 * HashSetDemo demo = new HashSetDemo(); demo.addElement(2); demo.addElement(3);
+		 * demo.addElement(1); demo.addElement(2); demo.display();
+		 * demo.removeElement(2); demo.display(); demo.containElement(3);
+		 */
+		
+		/*
+		 * SetOperations demo = new SetOperations(); demo.union(); demo.intersection();
+		 * demo.difference();
+		 */
+		
+		/*
+		 * SortTreeSet demo = new SortTreeSet(); demo.display();
+		 */
+		
+		/*
+		 * EmployeeCollection demo = new EmployeeCollection();
+		 * demo.add("Sangita","SE","112"); demo.add("Rahul","PC","121");
+		 * demo.add("Sangita","SE","112"); demo.retrieve();
+		 */
+		
+		/* CompareSets.compareTime(); */
+		
+		
+		/*
+		 * WordCounter demo = new WordCounter(); demo.wordCounter();
+		 */
+		
+		/*
+		 * SuperSet demo = new SuperSet(); demo.checkSuperSet();
+		 */
+		
+		/*
+		 * CustomSorting demo = new CustomSorting(); demo.display();
+		 */
+		
+		SortTreeSetDesc demo = new SortTreeSetDesc();
 		demo.display();
 		
 	}
