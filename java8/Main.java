@@ -24,10 +24,41 @@ public class Main {
 		 * FilterEven demo = new FilterEven(); demo.filterEven();
 		 */
 		
-		LambdaPalindrome demo = new LambdaPalindrome();
-		demo.call("Sangita");
-		demo.call("MoM");
-		demo.call("poop");
+		/*
+		 * LambdaPalindrome demo = new LambdaPalindrome(); demo.call("Sangita");
+		 * demo.call("MoM"); demo.call("poop");
+		 */
+		
+		/*
+		 * StreamDemo demo = new StreamDemo(); demo.sum(); demo.average(); demo.max();
+		 * demo.min();
+		 */
+		
+		/*
+		 * MapList demo = new MapList(); demo.display(); System.out.println();
+		 * demo.mapToUpperCase(); demo.display();
+		 */
+		
+		/*
+		 * FilterEmployee emp = new FilterEmployee(); emp.filterSalary(); emp.display();
+		 */
+		
+		/*
+		 * GroupStudents demo = new GroupStudents(); demo.groupStudents();
+		 * demo.display();
+		 */
+		
+		/*
+		 * GroupWords demo = new
+		 * GroupWords("Sangita, Java hi sangita java java java are you are");
+		 * demo.groupWords(); demo.display();
+		 */
+		
+		/*
+		 * NonRepeatedCharacter demo = new
+		 * NonRepeatedCharacter("hi my name is sangita saha"); demo.findCharacter();
+		 * demo.display();
+		 */
 		
 	}
 
