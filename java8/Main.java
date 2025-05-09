@@ -60,6 +60,27 @@ public class Main {
 		 * demo.display();
 		 */
 		
+		
+		/*
+		 * FunctionalInterfaceCal demo = new FunctionalInterfaceCal();
+		 * System.out.println(demo.compute(18, 0, '/'));
+		 */
+		
+		
+		/* PredicateDemo demo = new PredicateDemo(); demo.filter(); */
+		 
+		/* FunctionDemo demo = new FunctionDemo(); demo.convert(); */
+		
+		/*
+		 * ConsumerDemo demo = new ConsumerDemo(); demo.print();
+		 */
+		 
+		/*
+		 * SupplierDemo demo = new SupplierDemo(); demo.generate();
+		 */
+		
+		
+		
 	}
 
 }
