@@ -79,8 +79,28 @@ public class Main {
 		 * SupplierDemo demo = new SupplierDemo(); demo.generate();
 		 */
 		
+		/*
+		 * OptionalDemo1 demo = new OptionalDemo1(); demo.addObjects();
+		 * demo.getLength();
+		 */
 		
+		/*
+		 * OptionalDemo2 demo = new OptionalDemo2(); demo.checkIfPresent();
+		 */
 		
+		/*
+		 * OptionalDemo3 demo = new OptionalDemo3(); demo.testOrElse();
+		 * demo.testOrElseGet();
+		 */
+		
+		/*
+		 * OptionalDemo4 demo = new OptionalDemo4(); demo.call();
+		 */
+		
+		/*
+		 * OptionalDemo5 demo = new OptionalDemo5(); demo.call(null);
+		 * demo.call("sangita");
+		 */
 	}
 
 }
