@@ -3,6 +3,8 @@ package com.sangita.dateTimeAPI;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.temporal.ChronoUnit;
+import java.time.temporal.TemporalAdjusters;
+import java.util.Set;
 
 public class DemoAll {
 	
@@ -122,5 +124,113 @@ public class DemoAll {
 		
 	}
 	
+	public void call11()
+	{
+		LocalDateTime  ldt = LocalDateTime.now();  
+	    ZoneId  india = ZoneId.of("Asia/Kolkata");   
+	    ZonedDateTime zone1  = ZonedDateTime.of(ldt, india);   
+	    System.out.println("In India Central Time Zone: " + zone1);  
+	    ZoneId  tokyo = ZoneId.of("Asia/Tokyo");   
+	    ZonedDateTime zone2   = zone1.withZoneSameInstant(tokyo);   
+	    System.out.println("In Tokyo Central Time Zone: "  + zone2);  
+	}
+	
+	public void call12()
+	{
+		LocalDateTime  ldt = LocalDateTime.now();  
+	    ZoneId  india = ZoneId.of("Asia/Kolkata");   
+	    ZonedDateTime zone1  = ZonedDateTime.of(ldt, india);   
+	    System.out.println("In India Central Time Zone: " + zone1);  
+	}
+	
+	public void call13()
+	{
+		 java.util.Date dt1 = new java.util.Date();  
+		 LocalDateTime dt2 = dt1.toInstant()
+                 .atZone(ZoneId.systemDefault())
+                 .toLocalDateTime();
+		 System.out.println("Date -> LocalDateTime: "+ dt2);
+		 
+		 
+		 LocalDateTime dt3 = LocalDateTime.of(LocalDate.of(2025, 01, 12), LocalTime.of(17, 15, 00));
+		 java.util.Date dt4 = java.util.Date.from(dt3.atZone(ZoneId.systemDefault()).toInstant());
+		 System.out.println("LocalDateTime->Date: "+ dt4);
+		 
+	}
+	
+	
+	public void call14()
+	{
+		
+		Set<String> set = ZoneId.getAvailableZoneIds();
+		for(String i : set)
+		{
+			System.out.println(i);
+			
+		}
+		
+	}
+	
+	public void call15()
+	{
+		ZonedDateTime tokyoTime = ZonedDateTime.now(ZoneId.of("Asia/Tokyo"));
+        System.out.println("Tokyo Time: " + tokyoTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss z")));
+
+        // Convert Tokyo time to New York time
+        ZonedDateTime newYorkTime = tokyoTime.withZoneSameInstant(ZoneId.of("America/New_York"));
+        System.out.println("New York Time: " + newYorkTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss z")));
+   
+	}
+
+	public void call16()
+	{
+		 LocalDateTime now = LocalDateTime.now();
+		 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("EEE, MMM d, yyyy HH:mm:ss");
+		 String formattedDate = now.format(formatter);
+		 System.out.println("Formatted Date-Time: " + formattedDate);
+	}
+	
+	public void call17()
+	{
+		LocalDateTime now = LocalDateTime.now();
+        System.out.println("Original: " + now);
+
+        // Truncate to nearest hour
+        LocalDateTime truncatedToHour = now.truncatedTo(ChronoUnit.HOURS);
+        System.out.println("Truncated to Hour: " + truncatedToHour);
+
+        // Truncate to nearest minute
+        LocalDateTime truncatedToMinute = now.truncatedTo(ChronoUnit.MINUTES);
+        System.out.println("Truncated to Minute: " + truncatedToMinute);
+	}
+	
+	public void call18()
+	{
+		Instant nowUtc = Instant.now();
+        System.out.println("Current UTC Timestamp: " + nowUtc);
+	}
+	
+	public void call19()
+	{
+		 LocalDate today = LocalDate.now();
+
+	        // Adjust to the last day of the month
+	     LocalDate lastDay = today.with(TemporalAdjusters.lastDayOfMonth());
+
+	     System.out.println("Today: " + today);
+	     System.out.println("Last Day of Month: " + lastDay);
+	}
+	
+	public void call20()
+	{
+		  LocalDate current = LocalDate.now();
+
+	      System.out.println("Upcoming Mondays:");
+	      for (int i = 0; i < 5; i++) 
+	      {
+	         current = current.with(TemporalAdjusters.next(DayOfWeek.MONDAY));
+	         System.out.println(current);
+	      }
+	}
 	
 }
