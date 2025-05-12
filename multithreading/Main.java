@@ -1,5 +1,7 @@
 package com.sangita.multithreading;
 
+import java.util.concurrent.ForkJoinPool;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -98,6 +100,49 @@ public class Main {
 		 * Thread(task, "Thread-2"); t1.start(); t2.start();
 		 */
 	
-	}
+		/*
+		 * int num = 5; // Change this to compute factorial of any number ForkJoinPool
+		 * pool = new ForkJoinPool(); FactorialTask task = new FactorialTask(num);
+		 * 
+		 * long result = pool.invoke(task); System.out.println("Factorial of " + num +
+		 * " is " + result);
+		 */
+		
+		/*
+		 * int[] data = new int[100]; for (int i = 0; i < data.length; i++) { data[i] =
+		 * i + 1; }
+		 * 
+		 * ForkJoinPool pool = new ForkJoinPool(); ArraySumTask task = new
+		 * ArraySumTask(data, 0, data.length);
+		 * 
+		 * // Step 6: Invoke the task, triggering the ForkJoinPool to distribute work
+		 * int result = pool.invoke(task);
+		 * 
+		 * System.out.println("Total Sum: " + result);
+		 */
+		
+		
+		/*
+		 * int[][] A = { {1, 2, 3}, {4, 5, 6} }; int[][] B = { {7, 8}, {9, 10}, {11, 12}
+		 * }; int[][] C = new int[A.length][B[0].length];
+		 * 
+		 * ForkJoinPool pool = new ForkJoinPool(); MatrixMultiplyTask task = new
+		 * MatrixMultiplyTask(A, B, C, 0, A.length); pool.invoke(task);
+		 * 
+		 * // Print result for (int[] row : C) { for (int val : row) {
+		 * System.out.print(val + " "); } System.out.println(); }
+		 */
+		
+		/*
+		 * int[] arr = {3, 5, 8, 2, 9, 1, 7, 6};
+		 * 
+		 * ForkJoinPool pool = new ForkJoinPool(); ArraySumTask task = new
+		 * ArraySumTask(arr, 0, arr.length);
+		 * 
+		 * int totalSum = pool.invoke(task); System.out.println("Total sum: " +
+		 * totalSum);
+		 */
+	    }
+	
 
 }
