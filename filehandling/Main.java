@@ -74,7 +74,28 @@ public class Main {
 		 * PrintKeyword demo = new PrintKeyword(); try { demo.print("java"); } catch
 		 * (Exception e) { e.printStackTrace(); }
 		 */
-	
+		
+		
+		/*
+		 * SerializeEmp demo = new SerializeEmp(); demo.serializeObj();
+		 */
+
+		
+		/* DeserializeEmp demo = new DeserializeEmp(); demo.deserializeObj(); */
+		 
+		/*
+		 * SeDeList demo = new SeDeList(); demo.objectSerialize();
+		 * demo.objectDeserialize();
+		 */
+		
+		/*
+		 * HandleTransient demo = new HandleTransient(); demo.handleTransient();
+		 */
+		
+		/*
+		 * SerializePerson demo = new SerializePerson(); try { //demo.call();
+		 * demo.print(); } catch (Exception e) { e.printStackTrace(); }
+		 */
 	}
 
 }
