@@ -12,7 +12,7 @@ public class PreparedStatementLogin {
 	public static void main(String[] args) {
 	
 		Scanner sc = new Scanner(System.in);
-		System.out.print("Enter usrename: ");
+		System.out.print("Enter username: ");
 		String username = sc.next();
 		System.out.print("Enter password: ");
 		String password = sc.next();
